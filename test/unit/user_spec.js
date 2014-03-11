@@ -21,7 +21,7 @@ describe('User', function(){
     global.nss.db.dropDatabase(function(err, result){
       var bob = new User({role:'host', email:'bob@nomail.com', password:'1234'});
       bob.register(function(err){
-      done();
+        done();
       });
     });
   });
@@ -44,7 +44,7 @@ describe('User', function(){
         expect(u1.password).to.have.length(60);
         expect(u1._id).to.be.instanceof(Mongo.ObjectID);
         body = JSON.parse(body);
-//        expect(body.id).to.be.ok;
+//        expect(body._id).to.be.ok;
         console.log(body);
         done();
       });
