@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>send email from node.js</title>
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="1DQkOX2BwkK+zX5mEho0N3Kv2MpV3tS3jXZul1aPLjM=" name="csrf-token" />
+  <meta name="viewport" content="width=960">
+
+
+    <link type="text/plain" rel="author" href="https://github.com/humans.txt" />
+    <meta content="gist" name="octolytics-app-id" /><meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" />
+
+  <link href="/assets/application-44b43715ab7532233b3d1fd84abab56b.css" media="screen, print" rel="stylesheet" />
+  <script src="/assets/application-0cbb5966ab5d1da47f1a0050c1ca4d74.js"></script>
+
+      <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@github">
+  <meta property="og:title" content="chyld/email.js">
+  <meta property="og:type" content="githubog:gist">
+  <meta property="og:url" content="https://gist.github.com//chyld/9500500">
+  <meta property="og:image" content="https://0.gravatar.com/avatar/a06df7960bb828b14b70dda697c0c8a2?d=https%3A%2F%2Fidenticons.github.com%2F892c2238d065e8694ac7feadf7ebc4f5.png&amp;s=140">
+  <meta property="og:site_name" content="GitHub Gists">
+  <meta property="og:description" content="send email from node.js - Gist is a simple way to share snippets of text and code with others.">
+  <meta name="description" content="send email from node.js - Gist is a simple way to share snippets of text and code with others.">
+
+
+</head>
+
+<body class=" ">
+
+  <div id="wrapper">
+    
+
+    <div id="header" class="header header-logged-out">
+      <div class="container" class="clearfix">
+        <a class="header-logo-wordmark" href="https://gist.github.com/">
+          <span class="octicon octicon-logo-github"></span>
+          <span class="octicon-logo octicon-logo-gist"></span>
+        </a>
+
+        <div class="header-actions">
+          <a class="button primary" href="https://github.com/signup?return_to=gist">Sign up for a GitHub account</a>
+          <a class="button" href="https://gist.github.com/login?return_to=/chyld/9500500" data-skip-pjax>Sign in</a>
+        </div>
+        <div class="divider-vertical"></div>
+        <div class="topsearch">
+  <form id="top_search_form" action="/search" data-pjax-remote=push accept-charset="UTF-8">
+    <div class="search">
+      <input type="text" class="search js-search js-navigation-enable " name="q" placeholder="Search&#x2026;" data-hotkey="/" autocomplete=off autocorrect=off value="" >
+
+    </div>
+    <div class="divider-vertical"></div>
+  </form>
+  <ul class="top-nav">
+    <li class="explore"><a href="/discover/">Discover Gists</a></li>
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <div class="site-content" id="js-pjax-container" data-pjax-container>
+      <div class=" site-container js-site-container" data-url="/chyld/9500500">
+  
+  
+
+<meta content="true" name="octolytics-dimension-public" /><meta content="9500500" name="octolytics-dimension-gist_id" /><meta content="9500500" name="octolytics-dimension-gist_name" /><meta content="false" name="octolytics-dimension-anonymous" /><meta content="64319" name="octolytics-dimension-owner_id" /><meta content="chyld" name="octolytics-dimension-owner_login" /><meta content="false" name="octolytics-dimension-forked" />
+
+<div class="pagehead repohead">
+  <div class="container">
+    <div class="title-actions-bar">
+      <ul class="pagehead-actions">
+
+
+      </ul>
+      <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+        <span class="repo-label"><span>public</span></span>
+        <span class="mega-octicon octicon-gist" ></span>
+        <div class="meta">
+          <div class="gist-author">
+            <img src="https://0.gravatar.com/avatar/a06df7960bb828b14b70dda697c0c8a2?d=https%3A%2F%2Fidenticons.github.com%2F892c2238d065e8694ac7feadf7ebc4f5.png&s=140" width="26" height="26">
+            <span class="author vcard">
+                <span itemprop="title"><a href="/chyld">chyld</a></span>
+            </span> /
+            <strong><a href="/chyld/9500500" class="js-current-repository">email.js</a></strong>
+          </div>
+          <div class="gist-timestamp">
+              <span class="datetime">Created <time class="js-relative-date" title="2014-03-12T03:48:27Z" datetime="2014-03-12T03:48:27Z">2014-03-12</time></span>
+          </div>
+      </h1>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="gist-description container">
+    <p><div>send email from node.js</div></p>
+  </div>
+<div class="gist container js-gist-container" data-version="fe25975e8d269fe6fde899dbe079505e68b56a93">
+    <div class="root-pane">
+  <div class="menu-container">
+    <ul class="menu gisttabs">
+      <li>
+        <a href="/chyld/9500500" class="selected">
+          Gist Detail
+        </a>
+      </li>
+
+        <li class="revision-count">
+          <a href="/chyld/9500500/revisions" >
+            Revisions
+            <span class="counter">1</span>
+          </a>
+        </li>
+
+
+    </ul>
+  </div>
+
+  <ul class="export-references">
+    <li>
+      <a href="/chyld/9500500/download" class="minibutton" data-skip-pjax="true" rel="nofollow"><span class="octicon octicon-cloud-download"></span>Download Gist</a>
+    </li>
+    <li>
+      <label for="url-field"><strong>Clone</strong> this gist</label>
+      <input type="text" readonly spellcheck="false" class="url-field js-url-field js-copy-toggle" name="url-field" value="https://gist.github.com/9500500.git">
+    </li>
+    <li>
+      <label for="embed-field"><strong>Embed</strong> this gist</label>
+      <input type="text" readonly spellcheck="false" class="url-field js-url-field" name="embed-field" value="&lt;script src=&quot;https://gist.github.com/chyld/9500500.js&quot;&gt;&lt;/script&gt;">
+    </li>
+    <li>
+      <label for="link-field"><strong>Link to</strong> this gist</label>
+      <input type="text" readonly spellcheck="false" class="url-field js-url-field" name="link-field" value="https://gist.github.com/chyld/9500500">
+    </li>
+  </ul>
+</div>
+
+
+  <div class="column files">
+        <div id="file-email-js" class="bubble">
+          <div class="file-box ">
+            <div class="meta">
+              <div class="file-info">
+                <span class="file-type-icon"><span class="octicon octicon-gist"></span></span>
+                <strong class="file-name js-selectable-text">email.js</strong>
+              </div>
+              <div class="file-actions">
+                <span class="file-language">JavaScript</span>
+                <ul class="button-group">
+                  <li><a aria-label="Permalink" href="#file-email-js" class="file-actions-button tooltipped tooltipped-s permalink"><span class="octicon octicon-link"></span></a></li>
+                  <li><a aria-label="View Raw" title="View Raw" href="https://gist.githubusercontent.com/chyld/9500500/raw/7fb66ceceda931a34bc23cd1bdf5cfeaa0418a95/email.js" data-skip-pjax class="file-actions-button tooltipped tooltipped-s raw-url"><span class="octicon octicon-code"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="suppressed">
+              <a class="js-show-suppressed-file">File suppressed. Click to show.</a>
+            </div>
+            
+
+
+
+    <div class="file-data">
+      <table cellpadding="0" cellspacing="0" class="lines highlight">
+        <tr>
+          <td class="line-numbers">
+            <span class="line-number" id="file-email-js-L1" rel="file-email-js-L1">1</span>
+            <span class="line-number" id="file-email-js-L2" rel="file-email-js-L2">2</span>
+            <span class="line-number" id="file-email-js-L3" rel="file-email-js-L3">3</span>
+            <span class="line-number" id="file-email-js-L4" rel="file-email-js-L4">4</span>
+            <span class="line-number" id="file-email-js-L5" rel="file-email-js-L5">5</span>
+            <span class="line-number" id="file-email-js-L6" rel="file-email-js-L6">6</span>
+            <span class="line-number" id="file-email-js-L7" rel="file-email-js-L7">7</span>
+            <span class="line-number" id="file-email-js-L8" rel="file-email-js-L8">8</span>
+            <span class="line-number" id="file-email-js-L9" rel="file-email-js-L9">9</span>
+            <span class="line-number" id="file-email-js-L10" rel="file-email-js-L10">10</span>
+            <span class="line-number" id="file-email-js-L11" rel="file-email-js-L11">11</span>
+            <span class="line-number" id="file-email-js-L12" rel="file-email-js-L12">12</span>
+            <span class="line-number" id="file-email-js-L13" rel="file-email-js-L13">13</span>
+            <span class="line-number" id="file-email-js-L14" rel="file-email-js-L14">14</span>
+            <span class="line-number" id="file-email-js-L15" rel="file-email-js-L15">15</span>
+            <span class="line-number" id="file-email-js-L16" rel="file-email-js-L16">16</span>
+            <span class="line-number" id="file-email-js-L17" rel="file-email-js-L17">17</span>
+            <span class="line-number" id="file-email-js-L18" rel="file-email-js-L18">18</span>
+            <span class="line-number" id="file-email-js-L19" rel="file-email-js-L19">19</span>
+            <span class="line-number" id="file-email-js-L20" rel="file-email-js-L20">20</span>
+            <span class="line-number" id="file-email-js-L21" rel="file-email-js-L21">21</span>
+            <span class="line-number" id="file-email-js-L22" rel="file-email-js-L22">22</span>
+            <span class="line-number" id="file-email-js-L23" rel="file-email-js-L23">23</span>
+            <span class="line-number" id="file-email-js-L24" rel="file-email-js-L24">24</span>
+            <span class="line-number" id="file-email-js-L25" rel="file-email-js-L25">25</span>
+            <span class="line-number" id="file-email-js-L26" rel="file-email-js-L26">26</span>
+            <span class="line-number" id="file-email-js-L27" rel="file-email-js-L27">27</span>
+            <span class="line-number" id="file-email-js-L28" rel="file-email-js-L28">28</span>
+            <span class="line-number" id="file-email-js-L29" rel="file-email-js-L29">29</span>
+            <span class="line-number" id="file-email-js-L30" rel="file-email-js-L30">30</span>
+            <span class="line-number" id="file-email-js-L31" rel="file-email-js-L31">31</span>
+            <span class="line-number" id="file-email-js-L32" rel="file-email-js-L32">32</span>
+            <span class="line-number" id="file-email-js-L33" rel="file-email-js-L33">33</span>
+            <span class="line-number" id="file-email-js-L34" rel="file-email-js-L34">34</span>
+          </td>
+          <td class="line-data">
+            <pre class="line-pre"><div class="line" id="file-email-js-LC1"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span></div><div class="line" id="file-email-js-LC2">&nbsp;</div><div class="line" id="file-email-js-LC3"><span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;request&#39;</span><span class="p">);</span></div><div class="line" id="file-email-js-LC4"><span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span></div><div class="line" id="file-email-js-LC5"><span class="kd">var</span> <span class="nx">jade</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;jade&#39;</span><span class="p">);</span></div><div class="line" id="file-email-js-LC6">&nbsp;</div><div class="line" id="file-email-js-LC7"><span class="nx">exports</span><span class="p">.</span><span class="nx">sendWelcome</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">fn</span><span class="p">){</span></div><div class="line" id="file-email-js-LC8">  <span class="nx">send</span><span class="p">({</span><span class="nx">from</span><span class="o">:</span><span class="s1">&#39;admin@aol.com&#39;</span><span class="p">,</span> <span class="nx">to</span><span class="o">:</span><span class="nx">data</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">subject</span><span class="o">:</span><span class="s1">&#39;Welcome to AirBnB&#39;</span><span class="p">,</span> <span class="nx">template</span><span class="o">:</span><span class="s1">&#39;welcome&#39;</span><span class="p">},</span> <span class="nx">fn</span><span class="p">);</span></div><div class="line" id="file-email-js-LC9"><span class="p">};</span></div><div class="line" id="file-email-js-LC10">&nbsp;</div><div class="line" id="file-email-js-LC11"><span class="kd">function</span> <span class="nx">send</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">fn</span><span class="p">){</span></div><div class="line" id="file-email-js-LC12">  <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">to</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/@nomail.com/g</span><span class="p">)){</span><span class="nx">fn</span><span class="p">();</span> <span class="k">return</span><span class="p">;}</span></div><div class="line" id="file-email-js-LC13">&nbsp;</div><div class="line" id="file-email-js-LC14">  <span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">MAILGUN</span><span class="p">;</span></div><div class="line" id="file-email-js-LC15">  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;https://api:&#39;</span> <span class="o">+</span> <span class="nx">key</span> <span class="o">+</span> <span class="s1">&#39;@api.mailgun.net/v2/chyld.io/messages&#39;</span><span class="p">;</span></div><div class="line" id="file-email-js-LC16">  <span class="kd">var</span> <span class="nx">post</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">){</span></div><div class="line" id="file-email-js-LC17">    <span class="nx">fn</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">body</span><span class="p">);</span></div><div class="line" id="file-email-js-LC18">  <span class="p">});</span></div><div class="line" id="file-email-js-LC19">&nbsp;</div><div class="line" id="file-email-js-LC20">  <span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nx">post</span><span class="p">.</span><span class="nx">form</span><span class="p">();</span></div><div class="line" id="file-email-js-LC21">  <span class="nx">form</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;from&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">from</span><span class="p">);</span></div><div class="line" id="file-email-js-LC22">  <span class="nx">form</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;to&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">to</span><span class="p">);</span></div><div class="line" id="file-email-js-LC23">  <span class="nx">form</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">subject</span><span class="p">);</span></div><div class="line" id="file-email-js-LC24">  <span class="nx">form</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="nx">compileJade</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span></div><div class="line" id="file-email-js-LC25"><span class="p">}</span></div><div class="line" id="file-email-js-LC26">&nbsp;</div><div class="line" id="file-email-js-LC27"><span class="kd">function</span> <span class="nx">compileJade</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span></div><div class="line" id="file-email-js-LC28">  <span class="kd">var</span> <span class="nx">template</span> <span class="o">=</span> <span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">&#39;/../views/email/&#39;</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">template</span> <span class="o">+</span> <span class="s1">&#39;.jade&#39;</span><span class="p">;</span></div><div class="line" id="file-email-js-LC29">  <span class="kd">var</span> <span class="nx">original</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">template</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">);</span></div><div class="line" id="file-email-js-LC30">  <span class="kd">var</span> <span class="nx">partial</span> <span class="o">=</span> <span class="nx">jade</span><span class="p">.</span><span class="nx">compile</span><span class="p">(</span><span class="nx">original</span><span class="p">);</span></div><div class="line" id="file-email-js-LC31">  <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">partial</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span></div><div class="line" id="file-email-js-LC32">&nbsp;</div><div class="line" id="file-email-js-LC33">  <span class="k">return</span> <span class="nx">output</span><span class="p">;</span></div><div class="line" id="file-email-js-LC34"><span class="p">}</span></div></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+          </div>
+        </div>
+    <div id="comments" class="new-comments">
+      
+    </div>
+      <p class="uncommentable"><span class="octicon octicon-alert"></span> Please <a href="/login?return_to=/chyld/9500500" rel="nofollow">sign in</a> to comment on this gist.</p>
+  </div>
+</div>
+
+  <div class="context-overlay"></div>
+</div>
+
+    </div>
+    <div class="slow-loading-overlay"></div>
+  </div>
+
+  <div id="ajax-error-message" class="flash flash-error">
+    <div class="container">
+      <span class="octicon octicon-alert"></span>
+      Something went wrong with that request. Please try again.
+      <a href="#" class="octicon octicon-remove-close ajax-error-dismiss"></a>
+    </div>
+  </div>
+
+
+  <footer>
+    <div id="footer">
+  <div class="container clearfix">
+
+    <!-- Served fresh by github-fe102-cp1-prd.iad.github.net -->
+    <p class="right">&copy; 2014 GitHub Inc. All rights reserved.</p>
+    <a class="left" href="/">
+      <span class="mega-octicon octicon-mark-github"></span>
+    </a>
+    <ul id="legal">
+      <li><a href="https://github.com/blog">The GitHub Blog</a></li>
+      <li><a href="mailto:support@github.com">Support</a></li>
+      <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+
+  </div><!-- /.container -->
+</div><!-- /.#footer -->
+
+  </footer>
+
+</body>
+</html>
