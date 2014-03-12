@@ -5,7 +5,6 @@ process.env.DBNAME = 'airbnb-test';
 var expect = require('chai').expect;
 var Mongo = require('mongodb');
 var User;
-//var sue;
 
 describe('User', function(){
 
