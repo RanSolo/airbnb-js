@@ -19,12 +19,28 @@ User.prototype.register = function(fn){
     insert(self, function(err){
       if(self._id){
         email.sendWelcome({to:self.email}, function(err, body){
-          fn(err,body);
+          fn(err, body);
         });
       }else{
         fn();
       }
     });
+  });
+};
+
+User.findByEmailAndPassword = function(email, password, fn){
+  users.findOne({email:email}, function(err, user){
+    if(user){
+      bcrypt.compare(password, user.password, function(err, result){
+        if(result){
+          fn(user);
+        }else{
+          fn();
+        }
+      });
+    }else{
+      fn();
+    }
   });
 };
 
@@ -45,3 +61,5 @@ function hashPassword(password, fn){
     fn(hash);
   });
 }
+
+

@@ -63,5 +63,40 @@ describe('users', function(){
     });
   });
 
+  describe('GET/login', function(){
+    it('should display the loginpage', function(done){
+      request(app)
+      .get('/login')
+      .end(function(err, res){
+        expect(res.status).to.equal(200);
+        done();
+      });
+    });
+  });
+
+  describe('POST/login', function(){
+    it('should login a user', function(done){
+      request(app)
+      .post('/login')
+      .field('email', 'sue@aol.com')
+      .field('password', 'abcd')
+      .end(function(err, res){
+        expect(res.status).to.equal(302);
+        done();
+      });
+    });
+    it('should not login a user due to bad login', function(done){
+      request(app)
+      .post('/login')
+      .field('email', 'bob@aol.com')
+      .field('password', '134')
+      .end(function(err, res){
+        expect(res.status).to.equal(200);
+        done();
+      });
+    });
+
+  });
+
 });
 
